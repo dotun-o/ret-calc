@@ -1,16 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i');
 
-@mixin reset
-{
+/* SIZES */
+$app-width: 480px;
+$reg-size: 20px;
+$small-size: 10px;
+$large-size: 50px;
+
+/* COLORS */
+$light-gray: #f7f7f7;
+$dark-gray: #333333;
+
+@mixin reset {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-*
-{
+* {
     @include reset;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 30px;
+    font-size: $reg-size;
+    color: $dark-gray;
+}
+
+form * {
+    display: block;
+    width: 100%;
+}
+
+label, button {margin-top: $reg-size;}
+
+input, select, textarea, button {
+    border-radius: $small-size;
+    padding: $small-size;
+    background: $light-gray;
+}
+
+button {
+    background: $dark-gray;
+    color: $light-gray;
+}
+
+#wrapper {
+    margin: auto;
+    padding: $reg-size;
+    max-width: $app-width;
 }

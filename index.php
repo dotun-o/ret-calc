@@ -12,22 +12,30 @@
 </head>
 
 <body>
-<form id="ret-calc-form">
-<label for="">Annual Contribution (%)</label>
-<label for="">Annual Salary ($)</label>
-<label for="">Annual Salary Increase (%)</label>
-<label for="">Current Age</label>
-<label for="">Retirement Age</label>
-<label for="">Current 401k Balance ($)</label>
-<label for="">Annual Rate of Return (%)</label>
-<label for="">Employer Match (%)</label>
+<div id="wrapper">
+    <form id="ret-calc-form">
+        <label for="current-balance">Current 401k Balance:</label>
+        <input id="current-balance" type="text" required="required">
 
+        <label for="">Monthly Contributions (yours, employer match, catch-up):</label>
+        <input id="current-balance" type="text" required="required">
 
-<label for="">Enter Your Current 401k Balance:</label>
-<label for="">Enter Total monthly Contributions (yours, employer match, catch-up):</label>
-<label for="">Enter Estimated Annual Return on Investment:</label>
-<label for="">Enter Current Age:</label>
-<label for="">Enter Retirement Age:</label>
-</form>
+        <label for="">Estimated Annual Return on Investment:</label>
+        <input id="current-balance" type="text" required="required">
+
+        <label for="">Current Age:</label>
+        <input id="current-balance" type="text" required="required">
+
+        <label for="">Retirement Age:</label>
+        <input id="current-balance" type="text" required="required">
+
+        <button type="submit">Calculate</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- TODO
+        <button>Email My Results</button>
+    -->
+</div><!--wrapper-->
 </body>
 </html>
